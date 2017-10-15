@@ -1,0 +1,207 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+        <link rel="stylesheet" href=../../js/vendor/waves/waves.min.css />
+        <link rel="stylesheet" href="../../js/vendor/wow/animate.css" />
+        <link rel="stylesheet" href="../../css/nd2/nativedroid2.css" />
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />      
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link href="../../css/prism/prism.css" rel="stylesheet" type="text/css"/>
+        <!-- Place favicon.ico in the root directory -->
+
+        <!--        <link rel="stylesheet" href="css/normalize.css">
+                <link rel="stylesheet" href="css/main.css">
+                <script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
+
+        <style>
+            /* Prevent FOUC */
+            body { opacity: 0; }
+        </style>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div data-role="page">
+
+            <nd2-include data-src="../fragments/panel.left.html"></nd2-include>
+
+            <div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+                <nd2-include data-src="../fragments/bottom.sheet.html"></nd2-include>
+            </div>
+
+            <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+                <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
+                <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+                <h1 class="wow fadeIn" data-wow-delay='0.4s'>Лекция 1</h1>
+            </div>
+
+            <div role="main" class="ui-content" data-inset="false">
+
+                <p class="nd2-headline" id="lmenu">ВВЕДЕНИЕ. АНАЛИЗ АЛГОРИТМОВ. КАЧЕСТВО. ОЦЕНКА ВРЕМЕННЫХ ЗАТРАТ</p>
+
+                <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+                    <h3>В этой лекции...</h3>
+                    <ul data-role="listview" data-inset="false" data-icon="false">
+                        <li><a href="#intro" data-ajax='false' data-icon="false">Введение</a></li>
+                        <li><a href="#algo" data-ajax='false' data-icon="false">Алгоритмы. Анализ алгоритмов</a></li>
+                        <li><a href="/elements/pages/l3.html" data-ajax='false' data-icon="false">Простые приемы доказательства</a></li>
+
+                        <li><a href="/elements/pages/l4.html" data-ajax='false'>&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Прием "Пример"</a></li>
+                        <li><a href="/elements/pages/l5.html" data-ajax='false'>&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Прием "Контратака"</a></li>
+
+
+                        <li><a href="/elements/pages/l6.html" data-ajax='false'>Индукция и инварианты цикла</a></li>
+                        <li><a href="/elements/pages/l7.html" data-ajax='false'>Нотация большого “O”</a></li>
+
+                        <li><a href="/elements/pages/l8.html" data-ajax='false'>&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Предостережение</a></li>   
+
+
+                        <li><a href="/elements/pages/l9.html" data-ajax='false'>Задачи</a></li>
+                    </ul>
+                </div>    
+
+                <p class="nd2-title" id="intro">ВВЕДЕНИЕ</p>
+                <p>Классической формулой успеха для программиста является утверждение Н.Вирта «Хорошая программа – это единство продуманного алгоритма и эффективных структур данных». Данный учебный курс посвящен формированию научной системы мышления, умению проектировать алгоритмы и структуры данных. Перед изучением данного учебного курса предполагается, что студенты обладают знаниями в области простейших алгоритмов, владеют языком программирования высокого уровня, владеют основами объектно-ориентированного подхода в анализе и проектировании систем.</p>
+
+                <hr>
+
+                <p class="nd2-title" id="algo">Алгоритмы. Анализ алгоритмов</p>
+                <div class='box'>
+                    <blockquote>
+                        <p>Алгоритм — набор инструкций, описывающих порядок действий исполнителя для достижения некоторого результата. Понятие алгоритма относится к первоначальным, основным, базисным понятиям математики.</p>
+                        <footer><a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" target="_system" style="text-decoration: none;">Алгоритм — Википедия</a></footer>
+                    </blockquote>
+                </div>
+                <p>Понятия “алгоритма и структур данных” являются центральными в сфере компьютерных технологий, однако, чтобы называть некоторые структуры данных и алгоритмы «качественными и эффективными», следует использовать точные приемы их анализа. В качестве естественного критерия качества естественно выделить, во-первых, время исполнения. Также важным является объем затрачиваемых ресурсов памяти и дискового пространства. Внимание также следует уделить надежности и достоверности решений, их стабильности. Прежде всего давайте рассмотрим понятие затрат времени и того как его оценивать для произвольного алгоритма. Время выполнения алгоритма или операции над структурой данных зависит, как правило, от целого ряда факторов. Простейший способ определить затраты времени на выполнение некоторого алгоритма это провести замеры времени до запуска и после завершения работы алгоритма.</p>
+                <pre><code class="language-c">
+#include &lt;time.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;stdio.h&gt;
+ 
+void main (void){
+    time_t before = time (NULL);
+    for (int i=0; i < 10E8; i++)
+        (void)rand ();
+
+    printf ("time was taken about %d seconds", 
+        time (NULL)- before);
+}
+
+//time was taken about 17 seconds
+                </code></pre>
+                <p>Так в выше приведенном примере идет генерация 10<sup>8</sup> случайных чисел и выводится затраченное время. Следует, однако, помнить, что подобный способ оценки времени не является точным, прежде всего, следует понимать, что в современных операционных системах параллельно выполняются несколько задач и выполнение нашего тестового примера может совместиться с иными видами активности. Далее следует понимать, что добиться устойчивой зависимости можно лишь при проведении многоразовых испытаний, иначе в причину влияния на конечный результат работы случайных факторов зависящих от специфики исходных данных, и других факторов, время выполнения алгоритма также будет случайной величиной. При проведении исследования необходимо запустить алгоритм с различным набором исходных данных, обычно сами данные генерируются случайным образом таким образом благодаря различающимся наборам данных будут отличаться также и затраты времени, классическим примером будет алгоритмы сортировки или алгоритмы поиска. После того как будет получен набор оценок, можно построить график и провести его аппроксимацию. Например, с помощью Excel по исходным данным для графика можно построить линию тренда.</p>    
+                <div class="nd2-card">
+
+                    <div class="card-media">
+                        <img src="./images/1.1.png">
+                    </div>
+                    <!--
+                                        <div class="card-supporting-text">
+                                            Cards are a convenient means of displaying content composed of different elements. They're also well-suited for showcasing elements whose size or supported actions vary, like photos with captions of variable length.
+                                        </div>-->
+
+                </div>
+                <p>
+                    Подобный анализ всегда следует применять в случае использования не тривиальных алгоритмов, это подобно рекомендации заниматься разработкой приложения, использую для отладки не пробный набор из нескольких десятков записей или элементов, а реальные данные в полном объеме, что позволяет избежать модификации или даже полной переработки алгоритма или структур данных, если в последствии окажется их практическая не применимость. Имея набор результатов эксперимента можно провести интерполяцию и экстраполяцию и определить поведение алгоритма в реальных условиях.
+                </p>
+                <p>
+                    В целом можно сказать, что время выполнения алгоритма или метода структуры данных возрастает по мере увеличения размера исходных данных, хотя оно зависит и от типа данных, даже при равном размере. Кроме того, время выполнения зависит от аппаратного обеспечения (процессора, тактовой частоты, размера памяти, места на диске и др.) и программ¬ного обеспечения (операционной среды, языка программирования, компилятора, интерпретатора и др.), с помощью которых осуществляется реализация, компиляция и выполнение алгоритма. Например, при всех прочих равных условиях время выполнения алгоритма для определенного ко¬личества исходных данных будет меньше при использовании более мощного компьютера или при записи алгоритма в виде программы на машин¬ном коде по сравнению с его исполнением виртуальной машиной, проводящей интерпретацию в байт-коды.
+                </p>
+                <p>
+                    Таким образом, мы приходим к выводу, что проведение анализа алгоритмов эмпирическим путем не является действительно надежным. Основные недостатки можно свести к следующим <strong>трем положениям</strong>:
+                <h5>1) эксперименты могут проводиться лишь с использованием ограниченного набора исходных данных;</h5>
+                результаты, полученные с использованием другого набора, не учитываются. В качестве демонстрации можно привести алгоритм подсчета суммы некоторого ряда с точностью до указанной дельта:<br>
+                <span><center>`sum_(i=1)^oo 1/i`</center></span>
+                </p>
+                <p>Aлгоритм выдаст неправильное решение (равное конечному числу, хотя и очень большому) в виду того, что данный ряд является расходящимся и его суммой является бесконечность.</p>
+                <pre><code class="language-c">
+#include &lt;math.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+void main(void)
+{
+    double sum = 0 , ai;
+    int f = 1 , i = 1;
+    do{
+        sum+= (ai = 1.0/f);
+        f*=i++;
+    }while (fabs(ai) >= 1E-5);
+    printf ("exp = %lf" , sum); 
+
+    (void) getch ();
+}
+                </code></pre>
+                <h5>2)для сравнения эффективности двух алгоритмов необходимо, чтобы эксперименты по определению времени их выполнения проводились на одинаковом аппаратном и программном обеспечении;<br>3)для экспериментального изучения времени выполнения алгоритма необходимо провести его реализацию и выполнение.</h5>
+                <p>Таким образом, мы приходим к необходимости использования для анализа алгоритмов методов общего анализа, который:</p>
+                <ol data-role="listview" data-icon="false">
+                    <li>  учитывает различные типы входных данных;</li>
+                    <li>позволяет производить оценку относительной эффективности любых двух алгоритмов независимо от аппаратного и программного обеспечения;</li>
+                    <li>может проводиться по описанию алгоритма без его непосредственной реализации или экспериментов.</li>
+                </ol>
+                <p>Суть общего анализа заключается в том, что некоторому алгоритму ставится в соответствие функция `F=F(n_1, .., n_m)`. В простейшем варианте это функция одной переменной `n_1` – количества исходных данных. Однако могут быть и другие переменные – например точность расчета или его достоверность. Так для определения того является ли некоторое число простым в случае больших чисел (длина двоичного представления более чем 200 бит) используют вероятностный метод, достоверность которого можно варьировать. Наиболее известные функции это линейные, степенные, логарифмические. Поэтому следует потратить время и вспомнить основы работы с ними.
+                </p>
+                <p>При построении алгоритмов первая стадия идет с использованием не языка программирования, а описания на человеческом языке. Подобные описания не являются программами, но вместе с тем они более структурированы, чем обычный текст. В частности, «высокоуровневые» описания сочетают естественный язык и распространенные структуры языка программирования, что делает их доступными и вместе с тем информативными. Такие описания способствуют проведению высокоуровневого анализа структуры данных или алгоритма. Подобные описания принято называть <strong>псевдокодом</strong>. Следует также отметить, что для проведения анализа псевдокод является зачастую более полезным, чем код на конкретном языке программирования.</p>
+                <div class="nd2-card">
+
+                    <div class="card-media">
+                        <img src="./images/1.2.png">
+                    </div>
+
+                    <div class="card-supporting-text">
+                        Псевдокод в сравнении с блок схемой - два часто используемых <a href="http://www.ido.rudn.ru/nfpk/inf/inf8.html" target="_system" style="text-decoration: none;">способа записи алгоритмов</a>
+                    </div>
+
+                </div>
+                <p>Для анализа алгоритмов и структур данных широко используют логарифмические и показательные (экспоненциальные) функции.</p>
+                <center>`log_bac=log_ba+log_bc`<br>`log_b(a/c)=log_ba-log_bc`<br>`log_ba^c=c*log_ba`<br>`b^(log_ca)=a^(log_cb)`<br>`(b^a)^c=b^(ac)`<br>`b^a*b^c=b^(a+c)`<br>`b^a/b^c=b^(a-c)`
+                </center>
+                <p>При анализе структур данных и алгоритмов зачастую используется понятие ряда, которое можно определить следующим образом:</p>
+                <center>`F(N)=A(1)+A(2)+...+A(N)`</center>
+                <p>Утверждение: если целое число `N>=0` и действительно число `0 < a != 1`, то</p>
+                <center>`sum_(i=0)^N a^i=1+a+a^2+a^3+a^4+...+a^N=(1-a^(N+1))/(1-a)`</center>
+                <p>Это пример геометрического ряда. Значение каждого элемента данного ряда увеличивается в геометрической прогрессии, если, конечно, `a > 1`. 
+                    Таким образом, элементы данного ряда возрастают по экспоненте. Если вы вспомните как вы работали с двоичной системой счисления, то также узнаете следующее равенство:</p>
+                <center>`1+2+4+...+2N-1=2N-1`</center>
+                <p>В случае арифметического ряда значение каждого элемента увеличивается на величину `d=a(i)–a(i-1)`</p>
+                <center>`sum_(i=0)^N(a+di)=a+(a+d)+(a+2d)+...+(a+Nd)=(A_1+A_N)/2*(N+1)`</center>
+                <p>Ряды используются при анализе структур данных и алгоритмов, так как выполнение циклов естественно приводит к их возникновению. Например, одним из видов, часто возникающим при анализе структур данных и алгоритмов, является ряд геометрической прогрессии.</p>
+                <a href="#lmenu" class="ui-btn ui-mini" data-ajax='false' data-icon="false"><i class='zmdi zmdi-menu'></i> К началу</a>
+                
+                
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+        <script src="../../js/vendor/waves/waves.min.js"></script>
+        <script src="../../js/vendor/wow/wow.min.js"></script>
+        <script src="../../js/nativedroid2.js"></script>
+        <script src="../../nd2settings.js"></script>
+
+        <!--http://prismjs.com/-->
+        <script src="../../css/prism/prism.js" type="text/javascript"></script>
+        <!--
+        http://asciimath.org/
+        http://www.wjagray.co.uk/maths/ASCIIMathTutorial.html
+        -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML"></script> 
+    </body>
+</html>

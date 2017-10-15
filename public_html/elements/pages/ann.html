@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+        <link rel="stylesheet" href=../../js/vendor/waves/waves.min.css />
+        <link rel="stylesheet" href="../../js/vendor/wow/animate.css" />
+        <link rel="stylesheet" href="../../css/nd2/nativedroid2.css" />
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />      
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!--        <link rel="stylesheet" href="css/normalize.css">
+                <link rel="stylesheet" href="css/main.css">
+                <script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
+
+        <style>
+            /* Prevent FOUC */
+            body { opacity: 0; }
+        </style>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div data-role="page">
+
+            <nd2-include data-src="../fragments/panel.left.html"></nd2-include>
+
+            <div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+                <nd2-include data-src="../fragments/bottom.sheet.html"></nd2-include>
+            </div>
+
+            <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+                <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
+                <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+                <h1 class="wow fadeIn" data-wow-delay='0.4s'>Анотація</h1>
+            </div>
+
+            <div role="main" class="ui-content" data-inset="false">
+                <p class="nd2-headline">ЦЕЛИ И ЗАДАЧИ ДИСЦИПЛИНЫ, ЕЕ МЕСТО В УЧЕБНОМ ПРОЦЕССЕ</p>
+                <p>Широкое использование современных информационных технологий,  современные требования к специалистам по разработке программного обеспечения, диктуют необходимость изучения научных основ и практических методов алгоритмизации вычислительных процессов.</p>                
+                <div class='box'>
+                    <blockquote>
+                        <p>Теoрия алгоритмов — наука, находящаяся на стыке математики и информатики, изучающая общие свойства и закономерности алгоритмов и разнообразные формальные модели их представления. Вместе с математической логикой теория алгоритмов образует теоретическую основу вычислительных наук.</p>
+                        <footer><a href="https://www.google.com.ua/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwjUz4ngy-jWAhVEYVAKHVAyBPIQFggmMAE&url=https%3A%2F%2Fru.wikipedia.org%2Fwiki%2F%25D0%25A2%25D0%25B5%25D0%25BE%25D1%2580%25D0%25B8%25D1%258F_%25D0%25B0%25D0%25BB%25D0%25B3%25D0%25BE%25D1%2580%25D0%25B8%25D1%2582%25D0%25BC%25D0%25BE%25D0%25B2&usg=AOvVaw1ty_bmm9diWxIPcPxRKTEg" target="_system" style="text-decoration: none;">Теория алгоритмов — Википедия</a></footer>
+                    </blockquote>
+                </div>
+                <hr><p class="nd2-title">ЦЕЛИ ИЗУЧЕНИЯ ДИСЦИПЛИНЫ</p>
+                <p>Главная цель дисциплины <strong>"Теории алгоритмов и структуры данных"</strong> - обеспечение четкого представления о методах структурного программирования, модульном подходе к построению алгоритмов, классических математических алгоритмах, существующих структурах данных.</p>
+                <hr><p class="nd2-title">ОСНОВНЫЕ ЗАДАЧИ КУРСА</p>
+                <ul data-role="listview" data-icon="star">
+                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;ознакомление с основами структурного программирования</li>
+                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;ознакомление с классическими методами построения алгоритмов</li>
+                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;изучение структур данных и особенностей работы с ними</li>
+                </ul>
+                <hr><p class="nd2-title">В РЕЗУЛЬТАТЕ ИЗУЧЕНИЯ КУРСА СТУДЕНТ ДОЛЖЕН ЗНАТЬ</p>
+                <ul data-role="listview" data-icon="star">
+                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;основные принципы структурного программирования</li>
+                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;классические методы решения типичных задач</li>
+                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;методы решения классических задач, недостатки и преимущества каждого из них</li>
+                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;принципы построения рекурсивных алгоритмов</li>
+                </ul>
+                <hr><p class="nd2-title">В РЕЗУЛЬТАТЕ ИЗУЧЕНИЯ КУРСА СТУДЕНТ ДОЛЖЕН УМЕТЬ</p>
+                <ul data-role="listview" data-icon="star">
+                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;на практике использовать общие методы построения алгоритмов</li>
+                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;строить рекурсивные алгоритмы</li>
+                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;реализовывать многомодульные программы</li>
+                    <li><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;использовать наиболее подходящие для решения задачи структуры данных</li>
+                </ul>
+                <hr><p class="nd2-title">МЕЖПРЕДМЕТНЫЕ СВЯЗИ</p>
+                <p>Дисциплина <strong>"Теория алгоритмов и структуры данных"</strong> изучается вместе с курсами <strong>"Основы программирования и алгоритмические языки"</strong>, <strong>"Высшая математика"</strong>, и во многом опирается на знания, полученные студентами в ходе изучения этих дисциплин.</p>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+        <script src="../../js/vendor/waves/waves.min.js"></script>
+        <script src="../../js/vendor/wow/wow.min.js"></script>
+        <script src="../../js/nativedroid2.js"></script>
+        <script src="../../nd2settings.js"></script>
+    </body>
+</html>
